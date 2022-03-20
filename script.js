@@ -64,4 +64,5 @@ reset.addEventListener('click', () =>{
     document.getElementById('img').style.height='0';
     document.getElementById('img').style.width='0';
     game="ON"
+    document.getElementById('info').innerText = ("Turn for "+ turn );
 })
