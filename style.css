@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200&family=Nunito:wght@300&family=Poppins:wght@200&family=Roboto:wght@300&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+
+nav ul{
+    list-style-type: none;
+}
+body{
+    background: #e4f3f5;
+}
+img{
+    /* height: 30vh;
+    width: 25vw; */
+    height: 0;
+    width: 0;
+    border: 1px solid cadetblue;
+    border-radius: 35px;
+    transition: width 1s ease-in-out;
+    /* display: none; */
+}
+nav{
+    align-items: center;
+    height: 50px;
+    background: #b14bc3;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    color: #fbf8e8;
+    font-family: 'Inter', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-size: x-large;
+    font-weight: bold;
+}
+.gameContainer{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    width: 100vw;
+    
+}
+.container{
+    margin-right: 2vw;
+    border: 3px solid darkgray;
+    border-radius: 25px;
+    background: white;
+    padding: 20px;
+    margin-top: 6vw;
+    display: grid;
+    grid-template-rows: repeat(3,15vh);
+    grid-template-columns: repeat(3,15vw);
+}
+.gameInfo{
+    display: flex;
+    flex-direction: column;
+    font-family: 'Inter', sans-serif;
+    font-family: 'Nunito', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    width: 40vw;
+    margin-left: 1vw;
+    padding-top: 13vh;
+}
+.gameInfo h1{
+    font-size: 6vh;
+    padding-left: 6vw;
+}
+.box{
+    border: 1px solid darkgrey;
+    font-size: 8vw;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    font-family: 'Inter', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto', sans-serif;
+}
+.boxtext{
+    font-family: 'Inter', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto', sans-serif;
+}
+.box:hover{
+    border: 1px solid darkgrey;
+    font-size: 8vw;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(232, 233, 233);
+    
+    cursor: pointer;
+}
+.bt-0{
+    border-top: 0;
+}
+.br-0{
+    border-right: 0;
+}
+.bb-0{
+    border-bottom: 0;
+}
+.bl-0{
+    border-left: 0;
+}
+.extra{
+    display: flex;
+    margin-top: 2vh;
+    justify-content: center;
+}
+.info{
+    width: 20vw;
+    font-size: 5vh;
+}
+button{
+    width: 8vw;
+    background: darkseagreen;
+    border: 2px solid black;
+    border-radius: 20px;
+    font-size: medium;
+    font-weight: bold;
+}
+.imgbox{
+    padding-top: 4vh;
+    display: flex;
+    justify-content: center;
+}
+@media screen and (max-width:950px) {
+    .gameContainer{
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+    .container{
+        flex-wrap: wrap;
+    width: 45vw;
+    margin: auto;
+    }
+    .gameContainer{
+        display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    width: 100vw;
+    }
+    .container{
+    flex-wrap: wrap;
+    width: 45vw;
+    margin: auto;
+    grid-template-rows: repeat(3,10vh);
+    grid-template-columns: repeat(3,15vw);
+}
+.gameInfo{
+    width: 100vw;
+    flex-wrap: wrap;
+    padding: 0vw;
+    margin: 0px;
+}
+h1{
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.extra{
+    width: 100vw;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.info{
+    width: 40vw;
+    text-align: center;
+    padding-right: 8vw;
+}
+#reset{
+    width: 23vw;
+    height: 6vh;
+    margin-left: 10vw;
+}
+}
