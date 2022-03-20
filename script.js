@@ -26,7 +26,7 @@ function checkwin(){
      { document.getElementById("info").innerText =(boxtext[e[0]].innerText + " is the WINNER");
       game = 'OFF';
       document.getElementById('img').style.height='30vh';
-      document.getElementById('img').style.width='40vw';
+      document.getElementById('img').style.width='90%';
       gameover.play();
       
     }
